@@ -12,7 +12,7 @@ action :run do
     node.save unless Chef::Config[:solo]
   end
 
-  golang_package 'github.com/bitly/oauth2_proxy.git'
+  golang_package 'github.com/bitly/oauth2_proxy'
 
   directory '/etc/google_auth_proxy' do
     owner 'root'
